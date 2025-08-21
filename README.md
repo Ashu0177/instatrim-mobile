@@ -18,17 +18,13 @@ Our vision is to make video creation seamless, powerful, and accessible on **And
 
 ## 🚀 Key Features  
 
-- AI-powered trimming & editing  
-- One-tap publishing across platforms  
-- Collaboration & premium suite  
-- Optimized for performance, security, and scale  
+See 👉 [docs/FEATURES.md](./docs/FEATURES.md)
 
 ---
 
 ## 📌 Roadmap  
 
 See the detailed roadmap in 👉 [docs/ROADMAP.md](./docs/ROADMAP.md)
-
 ---
 
 ## 📜 License  
