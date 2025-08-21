@@ -41,7 +41,8 @@ This project is licensed under the **MIT License** — see [LICENSE](./LICENSE).
 
 ---
 
-## 📚 Documentation
+## 📚 Documentation  
 
 - [Full Feature Snapshot](./docs/FEATURES.md)  
-- [Roadmap](./docs/ROADMAP.md)
+- [Public Roadmap](./docs/ROADMAP.md)  
+- [Internal Roadmap](./docs/internal/ROADMAP.md)
