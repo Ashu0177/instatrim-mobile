@@ -27,7 +27,7 @@ Our vision is to make video creation seamless, powerful, and accessible on **And
 
 ## 📌 Roadmap  
 
-See the detailed roadmap in 👉 [docs/README.md](./docs/README.md)  
+See the detailed roadmap in 👉 [Roadmap](./docs/ROADMAP.md)
 
 ---
 
