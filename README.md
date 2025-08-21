@@ -38,3 +38,10 @@ This project is licensed under the **MIT License** — see [LICENSE](./LICENSE).
 ---
 
 📌 *Status: Repo scaffolding in progress*
+
+---
+
+## 📚 Documentation
+
+- [Full Feature Snapshot](./docs/FEATURES.md)  
+- [Roadmap](./docs/ROADMAP.md)
