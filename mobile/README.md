@@ -1,7 +1,8 @@
 # Instatrim Mobile
 
-This folder contains the **Android (Java/Kotlin)** and **iOS (Swift)** source code for Instatrim.
+📱 Native mobile apps for **Android (Kotlin)** and **iOS (Swift)**.
 
-- 🎥 Core app: Shoot, Edit, Publish instantly  
-- 📱 Mobile-first design philosophy  
-- 🚀 Optimized for performance and ease of use
+---
+
+## Status
+Scaffolding planned — Android first.
