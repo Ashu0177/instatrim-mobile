@@ -4,4 +4,23 @@ This folder contains the **backend services** (Node.js/Express, APIs, database) 
 
 🗄️ Handles user accounts, media storage, and authentication  
 🔌 Provides APIs for mobile and web apps  
-🛡️ Ensures security, scalability, and high availability
+🛡️ Ensures security, scalability, and high availability  
+
+---
+
+## Purpose
+- Provides APIs for mobile and web apps.  
+- Handles user accounts, authentication, and subscription plans.  
+- Stores media files, watermarks, and AI model data.  
+- Manages licensing, monetization, and analytics.  
+
+## Tech Stack (planned)
+- Node.js (Express / NestJS) for API services  
+- PostgreSQL or MongoDB for database  
+- Firebase/Supabase for quick deployment (early stage)  
+- AWS/GCP/Azure for cloud hosting and scaling  
+- Docker + Kubernetes for deployment (future roadmap)  
+
+## Status
+- Initial placeholder only.  
+- Full backend API design will follow after mobile scaffolding is ready.  
