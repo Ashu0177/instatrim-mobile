@@ -1,0 +1,9 @@
+# CODEOWNERS
+# Require review/ownership by repo owner for all changes
+* @Ashu0177
+
+# Specific ownership (optional but explicit)
+/docs/ @Ashu0177
+/backend/ @Ashu0177
+/web/ @Ashu0177
+/mobile/ @Ashu0177
