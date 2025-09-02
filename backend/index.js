@@ -1,13 +1,18 @@
+// backend/index.js
 import express from "express";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Simple test route
-app.get("/", (req, res) => {
-  res.send("Instatrim Backend is running 🚀");
+// Middleware (parse JSON)
+app.use(express.json());
+
+// Test route
+app.get("/ping", (req, res) => {
+  res.json({ message: "pong" });
 });
 
+// Start server
 app.listen(PORT, () => {
-  console.log(`✅ Instatrim backend listening at http://localhost:${PORT}`);
+  console.log(`✅ Backend server running at http://localhost:${PORT}`);
 });
