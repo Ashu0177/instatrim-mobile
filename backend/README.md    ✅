@@ -24,3 +24,25 @@ This folder contains the **backend services** (Node.js/Express, APIs, database) 
 ## Status
 - Initial placeholder only.  
 - Full backend API design will follow after mobile scaffolding is ready.  
+
+---
+
+## Setup
+
+### 1. Install dependencies
+```bash
+npm install
+2. Run the server
+npm start
+
+3. Test the API
+
+Visit:
+
+http://localhost:3000/ping
+
+
+Response:
+
+{ "message": "pong" }
+
