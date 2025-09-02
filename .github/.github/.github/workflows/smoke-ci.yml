@@ -1,0 +1,40 @@
+name: Smoke CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  smoke:
+    name: Smoke checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show Node & NPM versions
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: NPM version
+        run: npm --version
+
+      - name: Node version
+        run: node --version
+
+      - name: Repo quick check - web
+        run: |
+          echo "=== web folder contents ==="
+          ls -la web || true
+
+      - name: Repo quick check - backend
+        run: |
+          echo "=== backend folder contents ==="
+          ls -la backend || true
+
+      - name: Quick markdown lint (optional)
+        run: |
+          echo "No destructive tests run — this is a harmless smoke job."
