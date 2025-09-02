@@ -45,4 +45,3 @@ http://localhost:3000/ping
 Response:
 
 { "message": "pong" }
-
