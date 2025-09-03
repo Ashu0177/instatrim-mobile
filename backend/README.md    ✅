@@ -2,9 +2,9 @@
 
 This folder contains the **backend services** (Node.js/Express, APIs, database) for Instatrim.  
 
-ðŸ—„ï¸ Handles user accounts, media storage, and authentication  
-ðŸ”Œ Provides APIs for mobile and web apps  
-ðŸ›¡ï¸ Ensures security, scalability, and high availability  
+ Handles user accounts, media storage, and authentication  
+ Provides APIs for mobile and web apps  
+ Ensures security, scalability, and high availability  
 
 ---
 
