@@ -2,9 +2,9 @@
 
 This folder contains the **backend services** (Node.js/Express, APIs, database) for Instatrim.  
 
-🗄️ Handles user accounts, media storage, and authentication  
-🔌 Provides APIs for mobile and web apps  
-🛡️ Ensures security, scalability, and high availability  
+ðŸ—„ï¸ Handles user accounts, media storage, and authentication  
+ðŸ”Œ Provides APIs for mobile and web apps  
+ðŸ›¡ï¸ Ensures security, scalability, and high availability  
 
 ---
 
@@ -32,16 +32,26 @@ This folder contains the **backend services** (Node.js/Express, APIs, database) 
 ### 1. Install dependencies
 ```bash
 npm install
-2. Run the server
+```
+
+### 2. Run the server
+```bash
 npm start
+```
 
-3. Test the API
-
-Visit:
-
+### 3. Test the API
+Visit:  
+```
 http://localhost:3000/ping
+```
 
-
-Response:
-
+Response:  
+```json
 { "message": "pong" }
+```
+
+---
+
+## Notes
+- Environment variables (API keys, DB config) will go in `.env` (not committed).  
+- Future: add database integration + media pipeline.
