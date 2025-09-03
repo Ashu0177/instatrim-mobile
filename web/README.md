@@ -2,10 +2,6 @@
 
 This folder contains the **Web app (React/Next.js)** source code for Instatrim.  
 
-💻 Cross-platform editing experience  
-🌐 Web-first deployment, accessible from any browser  
-⚡ Optimized for speed, security, and scalability  
-
 ---
 
 ## Purpose
@@ -22,3 +18,29 @@ This folder contains the **Web app (React/Next.js)** source code for Instatrim.
 ## Status
 - Initial placeholder only.  
 - Full implementation will be added in later development phases.  
+
+---
+
+## Setup
+
+### 1. Install dependencies
+```bash
+npm install
+```
+
+### 2. Run the development server
+```bash
+npm start
+```
+
+### 3. Open in browser
+Visit:  
+```
+http://localhost:3000
+```
+
+---
+
+## Notes
+- This is a scaffold only.  
+- Future versions will integrate editing modules and backend APIs.
