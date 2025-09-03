@@ -1,44 +1,64 @@
-# 🎬 Instatrim — Mobile-first AI Editor  
+# Instatrim
 
-**Shoot • Edit • Publish — Instantly**  
-
-Instatrim is a next-gen, mobile-first AI-powered editing platform.  
-Our vision is to make video creation seamless, powerful, and accessible on **Android, iOS, and Web** — all powered by a scalable backend.  
+**Shoot • Edit • Publish — Instantly.**  
+Beginner-friendly, mobile-first video editor with powerful AI features.
 
 ---
 
-## 📂 Repository Structure  
-
-- 📑 [Docs](./docs) — Vision, roadmap, and product planning  
-- 📱 [Mobile](./mobile) — Android (Java/Kotlin) and iOS (Swift) apps  
-- 💻 [Web](./web) — Web app (React/Next.js)  
-- ⚙️ [Backend](./backend) — APIs, services, and database  
+## Platforms
+- **Mobile (Android & iOS)** — one-tap capture, trim, effects, publish.  
+- **Web App** — edit in the browser, share/export everywhere.  
+- **Backend** — media processing, AI services, storage.  
 
 ---
 
-## 🚀 Key Features  
-
-See 👉 [docs/FEATURES.md](./docs/FEATURES.md)
-
----
-
-## 📌 Roadmap  
-
-See the detailed roadmap in 👉 [docs/ROADMAP.md](./docs/ROADMAP.md)
----
-
-## 📜 License  
-
-This project is licensed under the **MIT License** — see [LICENSE](./LICENSE).  
+## Repository Structure
+- `/mobile` → Mobile apps (Kotlin + Swift, future Flutter modules)  
+- `/web` → Web app (React/Next.js)  
+- `/backend` → API and media services (Node.js/Express)  
+- `/docs` → Documentation, roadmap, features  
 
 ---
 
-📌 *Status: Repo scaffolding in progress*
+## Highlights (snapshot)
+- Core: trim, cut, merge, speed, transitions  
+- AI: smart cut, captions, denoise, enhancement  
+- Audio: mixer, voice isolation, ambient removal  
+- Visual: color grading, filters, overlays, watermark control  
+- Publish: export presets (480p/720p/1080p/4K), social-ready  
+- Privacy: on-device where possible, secure uploads for cloud tasks  
+
+*(Full feature list in `/docs/FEATURES.md`)*  
 
 ---
 
-## 📚 Documentation  
+## Roadmap & Documentation
+See `/docs` folder →  
+- [Features](./docs/FEATURES.md)  
+- [Roadmap](./docs/ROADMAP.md)  
 
-- [Full Feature Snapshot](./docs/FEATURES.md)  
-- [Public Roadmap](./docs/ROADMAP.md)  
-- [Internal Roadmap](./docs/internal/ROADMAP.md)
+---
+
+## Getting Started
+
+### Mobile
+See [`/mobile/README.md`](./mobile/README.md)
+
+### Web
+See [`/web/README.md`](./web/README.md)
+
+### Backend
+See [`/backend/README.md`](./backend/README.md)
+
+---
+
+## License
+[MIT](./LICENSE)
+
+---
+
+## Contact
+**Instatrim** — product inquiries & partnerships  
+Email: karthimkalaiselvan@gmail.com  
+
+
