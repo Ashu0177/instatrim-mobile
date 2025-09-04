@@ -1,46 +1,12 @@
-# Instatrim Web  
+# React + Vite
 
-This folder contains the **Web app (React/Next.js)** source code for Instatrim.  
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## Purpose
-- Provides a browser-based version of Instatrim for quick edits.  
-- Acts as a companion to the mobile app (upload / sync / preview).  
-- Future scope: investor demos, educator tools, and lightweight editing.  
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Tech Stack (planned)
-- React (Next.js or CRA) for UI  
-- Tailwind CSS for styling  
-- Firebase or Supabase for quick backend sync  
-- WebAssembly modules for performance-critical editing features  
+## Expanding the ESLint configuration
 
-## Status
-- Initial placeholder only.  
-- Full implementation will be added in later development phases.  
-
----
-
-## Setup
-
-### 1. Install dependencies
-```bash
-npm install
-```
-
-### 2. Run the development server
-```bash
-npm start
-```
-
-### 3. Open in browser
-Visit:  
-```
-http://localhost:3000
-```
-
----
-
-## Notes
-- This is a scaffold only.  
-- Future versions will integrate editing modules and backend APIs.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
