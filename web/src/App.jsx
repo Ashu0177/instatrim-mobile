@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// web/src/App.jsx
+import React from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+    <div style={{
+      fontFamily: "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
+      textAlign: "center",
+      marginTop: 80,
+      padding: "0 20px",
+      color: "#111"
+    }}>
+      <h1 style={{ fontSize: 48, margin: 0 }}>Instatrim</h1>
+      <p style={{ fontSize: 18, marginTop: 12, opacity: 0.85 }}>
+        Shoot • Edit • Publish — Instantly
+      </p>
+
+      <div style={{
+        marginTop: 40,
+        display: "inline-block",
+        textAlign: "left",
+        maxWidth: 560,
+        lineHeight: 1.6
+      }}>
+        <h3 style={{ marginBottom: 6 }}>Quick start (MVP)</h3>
+        <ul>
+          <li>Import or record a video</li>
+          <li>Trim / Cut / Merge</li>
+          <li>Export in common resolutions</li>
+        </ul>
+        <p style={{ marginTop: 12, fontSize: 14, color: "#555" }}>
+          This is a placeholder landing screen for the web scaffold. Replace with the full editor UI in the next iteration.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
