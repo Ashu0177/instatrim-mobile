@@ -5,33 +5,45 @@ function App() {
   return (
     <div style={{
       fontFamily: "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
-      textAlign: "center",
-      marginTop: 80,
-      padding: "0 20px",
-      color: "#111"
+      color: "#111",
+      display: "flex",
+      flexDirection: "column",
+      minHeight: "100vh"
     }}>
-      <h1 style={{ fontSize: 48, margin: 0 }}>Instatrim</h1>
-      <p style={{ fontSize: 18, marginTop: 12, opacity: 0.85 }}>
-        Shoot • Edit • Publish — Instantly
-      </p>
-
-      <div style={{
-        marginTop: 40,
-        display: "inline-block",
-        textAlign: "left",
-        maxWidth: 560,
-        lineHeight: 1.6
+      {/* Header */}
+      <header style={{
+        background: "#111",
+        color: "#fff",
+        padding: "16px 32px",
+        fontSize: 20,
+        fontWeight: "bold"
       }}>
-        <h3 style={{ marginBottom: 6 }}>Quick start (MVP)</h3>
-        <ul>
-          <li>Import or record a video</li>
-          <li>Trim / Cut / Merge</li>
-          <li>Export in common resolutions</li>
-        </ul>
-        <p style={{ marginTop: 12, fontSize: 14, color: "#555" }}>
-          This is a placeholder landing screen for the web scaffold. Replace with the full editor UI in the next iteration.
+        Instatrim
+      </header>
+
+      {/* Main content */}
+      <main style={{
+        flex: 1,
+        textAlign: "center",
+        marginTop: 60,
+        padding: "0 20px"
+      }}>
+        <h1 style={{ fontSize: 42, margin: 0 }}>Shoot • Edit • Publish</h1>
+        <p style={{ fontSize: 18, marginTop: 12, opacity: 0.85 }}>
+          Instantly create and share your videos with AI-powered editing tools.
         </p>
-      </div>
+      </main>
+
+      {/* Footer */}
+      <footer style={{
+        background: "#f5f5f5",
+        textAlign: "center",
+        padding: "12px 20px",
+        fontSize: 14,
+        color: "#555"
+      }}>
+        © {new Date().getFullYear()} Instatrim. All rights reserved.
+      </footer>
     </div>
   );
 }
