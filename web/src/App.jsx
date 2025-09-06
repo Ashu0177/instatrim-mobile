@@ -1,28 +1,21 @@
- // web/src/App.jsx
-import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+ function Features() {
+  const [features, setFeatures] = React.useState([]);
 
-function Home() {
-  return <h1 style={{ textAlign: "center", marginTop: 50 }}>🏠 HOME PAGE</h1>;
-}
+  React.useEffect(() => {
+    fetch("https://super-duper-spork-r4vrw9wg6776fqjw-3000.app.github.dev/features")
+      .then((res) => res.json())
+      .then((data) => setFeatures(data.features))
+      .catch((err) => console.error("Error fetching features:", err));
+  }, []);
 
-function Features() {
-  return <h1 style={{ textAlign: "center", marginTop: 50 }}>✨ FEATURES PAGE</h1>;
-}
-
-function App() {
   return (
-    <div>
-      <nav style={{ padding: 20 }}>
-        <Link to="/" style={{ marginRight: 15 }}>Home</Link>
-        <Link to="/features">Features</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/features" element={<Features />} />
-      </Routes>
-    </div>
+    <main style={{ textAlign: "center", marginTop: 60, padding: "0 20px" }}>
+      <h1>Features</h1>
+      <ul style={{ marginTop: 20, textAlign: "left", display: "inline-block" }}>
+        {features.map((f, i) => (
+          <li key={i}>{f}</li>
+        ))}
+      </ul>
+    </main>
   );
 }
-
-export default App;
