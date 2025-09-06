@@ -1,6 +1,6 @@
-  // web/src/App.jsx
+// web/src/App.jsx
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -37,74 +37,72 @@ function Features() {
 
 function App() {
   return (
-    <Router>
-      <div
+    <div
+      style={{
+        fontFamily:
+          "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
+        color: "#111",
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+      }}
+    >
+      {/* Header */}
+      <header
         style={{
-          fontFamily:
-            "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
-          color: "#111",
-          display: "flex",
-          flexDirection: "column",
-          minHeight: "100vh",
+          background: "#111",
+          color: "#fff",
+          padding: "12px 20px",
+          boxShadow: "0 1px 4px rgba(0,0,0,0.06)",
         }}
       >
-        {/* Header */}
-        <header
+        <div
           style={{
-            background: "#111",
-            color: "#fff",
-            padding: "12px 20px",
-            boxShadow: "0 1px 4px rgba(0,0,0,0.06)",
+            maxWidth: 1200,
+            margin: "0 auto",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
           }}
         >
-          <div
-            style={{
-              maxWidth: 1200,
-              margin: "0 auto",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-            }}
-          >
-            <div style={{ fontSize: 20, fontWeight: 700 }}>Instatrim</div>
-            <nav style={{ display: "flex", alignItems: "center" }}>
-              <Link
-                to="/"
-                style={{ color: "#fff", textDecoration: "none", marginLeft: 18 }}
-              >
-                Home
-              </Link>
-              <Link
-                to="/features"
-                style={{ color: "#fff", textDecoration: "none", marginLeft: 18 }}
-              >
-                Features
-              </Link>
-            </nav>
-          </div>
-        </header>
+          <div style={{ fontSize: 20, fontWeight: 700 }}>Instatrim</div>
+          <nav style={{ display: "flex", alignItems: "center" }}>
+            <Link
+              to="/"
+              style={{ color: "#fff", textDecoration: "none", marginLeft: 18 }}
+            >
+              Home
+            </Link>
+            <Link
+              to="/features"
+              style={{ color: "#fff", textDecoration: "none", marginLeft: 18 }}
+            >
+              Features
+            </Link>
+          </nav>
+        </div>
+      </header>
 
-        {/* Routes */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/features" element={<Features />} />
-        </Routes>
+      {/* Routes */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/features" element={<Features />} />
+      </Routes>
 
-        {/* Footer */}
-        <footer
-          style={{
-            background: "#f5f5f5",
-            textAlign: "center",
-            padding: "12px 20px",
-            fontSize: 14,
-            color: "#555",
-            marginTop: "auto",
-          }}
-        >
-          © {new Date().getFullYear()} Instatrim. All rights reserved.
-        </footer>
-      </div>
-    </Router>
+      {/* Footer */}
+      <footer
+        style={{
+          background: "#f5f5f5",
+          textAlign: "center",
+          padding: "12px 20px",
+          fontSize: 14,
+          color: "#555",
+          marginTop: "auto",
+        }}
+      >
+        © {new Date().getFullYear()} Instatrim. All rights reserved.
+      </footer>
+    </div>
   );
 }
 
