@@ -1,4 +1,4 @@
-// backend/index.js
+ // backend/index.js
 import express from "express";
 
 const app = express();
@@ -11,6 +11,7 @@ app.use(express.json());
 app.get("/ping", (req, res) => {
   res.json({ message: "pong" });
 });
+
 // GET /features - return app feature list
 app.get("/features", (req, res) => {
   res.json({
@@ -21,7 +22,6 @@ app.get("/features", (req, res) => {
     ]
   });
 });
-
 
 // Start server
 app.listen(PORT, () => {
