@@ -15,24 +15,33 @@ function Home() {
 
 function Features() {
   const [features, setFeatures] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
-    fetch("http://localhost:3000/features") // backend API
+    fetch("http://localhost:3000/features")
       .then((res) => res.json())
-      .then((data) => setFeatures(data.features))
-      .catch((err) => console.error("Error fetching features:", err));
+      .then((data) => {
+        setFeatures(data.features || []);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Error fetching features:", err);
+        setLoading(false);
+      });
   }, []);
 
   return (
     <main style={{ textAlign: "center", marginTop: 60, padding: "0 20px" }}>
       <h1>Features</h1>
-      <ul style={{ marginTop: 20, textAlign: "left", display: "inline-block" }}>
-        {features.length > 0 ? (
-          features.map((f, i) => <li key={i}>{f}</li>)
-        ) : (
-          <li>Loading features...</li>
-        )}
-      </ul>
+      {loading ? (
+        <p>Loading features...</p>
+      ) : (
+        <ul style={{ marginTop: 20, textAlign: "left", display: "inline-block" }}>
+          {features.map((f, i) => (
+            <li key={i}>{f}</li>
+          ))}
+        </ul>
+      )}
     </main>
   );
 }
