@@ -1,18 +1,25 @@
  // backend/index.js
-import express from "express";
+const express = require("express");
+const cors = require("cors");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware (parse JSON)
+// Middleware
+app.use(cors());
 app.use(express.json());
 
-// Test route
+// Root route
+app.get("/", (req, res) => {
+  res.json({ message: "Backend is running 🚀" });
+});
+
+// Health check route
 app.get("/ping", (req, res) => {
   res.json({ message: "pong" });
 });
 
-// GET /features - return app feature list
+// Example features route
 app.get("/features", (req, res) => {
   res.json({
     features: [
